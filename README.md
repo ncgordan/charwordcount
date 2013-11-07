@@ -28,7 +28,7 @@ special option in TinyMCE init configration.
 Installation
 ----------
 ### Step 1
-Download ***charwordcount_latest.zip*** and extract ***charwordcount*** folder into ***tinymce/plugins/*** directory.
+Download zip package from GitHub ("Download ZIP" button at the right sidebar) and extract ***charwordcount*** folder into ***tinymce/plugins/*** directory.
 
 ### Step 2
 In TinyMCE init configuration `tinymce.init({...})`
