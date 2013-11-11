@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <title>charwordcount TinyMCE plugin example</title>
+
+        <script src="tinymce/tinymce.min.js"></script>
+        <script>
+            tinymce.init({
+                selector: "textarea",
+                width: 800,
+                height: 300,
+                resize: false,
+
+                plugins: [
+                    "charwordcount advlist link image lists preview pagebreak",
+                    "searchreplace code insertdatetime nonbreaking",
+                    "table textcolor paste textcolor"
+                ],
+                
+                charwordcount_include_tags: false, // optional, includes HTML tags and entities (like &nbsp;) in count; disabled by default;
+
+                toolbar1: "preview code | restoredraft undo redo | cut copy paste searchreplace | link unlink image | table | subscript superscript | nonbreaking | outdent indent blockquote | bullist numlist",
+                toolbar2: "formatselect fontselect fontsizeselect | bold italic underline strikethrough | forecolor backcolor | alignleft aligncenter alignright alignjustify",
+
+                menubar: false,
+                toolbar_items_size: 'small'
+            });
+        </script>
+    </head>
+    <body>
+        <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi adipiscing scelerisque magna vitae sagittis. Proin consequat imperdiet neque, id ultrices nunc condimentum eget. Maecenas euismod diam vitae pretium mattis. Fusce risus lectus, cursus eget rutrum et, vulputate nec quam. Mauris vel vulputate ante. Nulla semper, purus in mattis ultrices, arcu justo venenatis quam, at imperdiet lorem lacus vestibulum turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed metus vitae odio tempor vehicula eget vitae arcu. Curabitur bibendum sem augue, id ultrices elit porttitor nec. Curabitur et lobortis tellus. Proin dignissim sem ligula, ac commodo libero ornare vel.</textarea>
+    </body>
+</html>
